@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Styles */
+body {
+    @apply bg-gray-100 text-gray-900;
+}
+
+.dark-mode {
+    @apply bg-gray-900 text-white;
+}
+
+.task-container {
+    @apply max-w-2xl mx-auto p-4;
+}
+
+.task-item {
+    @apply p-4 border rounded-lg flex justify-between items-center bg-white shadow-md mb-2;
+}
+
+.task-item.dark-mode {
+    @apply bg-gray-800 text-white;
+}
+
+.task-button {
+    @apply p-2 rounded text-white;
+}
+
+.task-button.add {
+    @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.task-button.delete {
+    @apply bg-red-500 hover:bg-red-600;
+}
